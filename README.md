@@ -58,8 +58,6 @@ A BepInEx mod for R.E.P.O. with a toggle menu for god mode, speed hacks, noclip,
 
 4. Launch the game. Press `F8` in-game to open the menu.
 
-![In Game](screenshots/ingame.png)
-
 ---
 
 ## Building from Source
