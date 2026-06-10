@@ -3,6 +3,8 @@ A BepInEx mod for R.E.P.O. with a toggle menu for god mode, speed hacks, noclip,
 
 > Built for personal/private use with friends and family. Not intended for use in public lobbies.
 
+![Main Menu](screenshots/main_menu.png)
+
 ---
 
 ## Features
@@ -16,6 +18,8 @@ A BepInEx mod for R.E.P.O. with a toggle menu for god mode, speed hacks, noclip,
 - **Cosmetic Crates** — spawn Common, Uncommon, Rare, or Ultra-Rare crates on demand
 - **Level Items** — see all valuables currently in the level, teleport them to you or yourself to them
 - **Morph** — disguise yourself as any item currently in the level (hides player model, shadow, and flashlight)
+
+![Panels Open](screenshots/panels.png)
 
 ---
 
@@ -53,6 +57,8 @@ A BepInEx mod for R.E.P.O. with a toggle menu for god mode, speed hacks, noclip,
    ```
 
 4. Launch the game. Press `F8` in-game to open the menu.
+
+![In Game](screenshots/ingame.png)
 
 ---
 
@@ -112,6 +118,10 @@ RaccoonModMenu/
 └── README.md
 ```
 
+- **Morph** — disguise yourself as any item currently in the level (hides player model, shadow, and flashlight)
+
+![Morph](screenshots/morph.png)
+
 ---
 
 ## The `IsModded` Patch
@@ -144,4 +154,4 @@ Without this patch, loading any BepInEx mod can trigger the modded flag. This ke
 
 ## Disclaimer
 
-This mod is for private use on self-hosted sessions. Use responsibly. Try not to abuse it. Releasing just so we can start to make a hide and seak mod for the game. I am not a fan of repo, but I think adding a Hide and Seak Mode would make it an amazing game.
+This mod is for private use with friends and family on self-hosted sessions. Use responsibly.
