@@ -144,4 +144,4 @@ Without this patch, loading any BepInEx mod can trigger the modded flag. This ke
 
 ## Disclaimer
 
-This mod is for private use with friends and family on self-hosted sessions. Use responsibly.
+This mod is for private use on self-hosted sessions. Use responsibly. Try not to abuse it. Releasing just so we can start to make a hide and seak mod for the game. I am not a fan of repo, but I think adding a Hide and Seak Mode would make it an amazing game.
