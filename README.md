@@ -45,9 +45,9 @@ A BepInEx mod for R.E.P.O. with a toggle menu for god mode, speed hacks, noclip,
    - Extract so that `winhttp.dll` and the `BepInEx/` folder sit next to `REPO.exe`
    - Launch the game once to let BepInEx generate its folder structure, then close it
 
-2. Download the latest `RaccoonModMenu.dll` from [Releases](../../releases)
+2. Download the latest `REPOMENU.dll` from [Releases](../../releases)
 
-3. Drop `RaccoonModMenu.dll` into:
+3. Drop `REPOMENU.dll` into:
    ```
    Steam\steamapps\common\R.E.P.O\BepInEx\plugins\
    ```
@@ -111,6 +111,34 @@ RaccoonModMenu/
 ├── RaccoonModMenu.csproj
 └── README.md
 ```
+
+---
+
+## The `IsModded` Patch
+
+R.E.P.O. has a built-in modded check — the `ModdedCheck.IsModded()` method. When this returns `true`, the game flags your session as modded which can affect matchmaking or display a modded indicator to other players.
+
+This mod includes a Harmony prefix patch that forces `IsModded()` to always return `false`:
+
+```csharp
+[HarmonyPatch(typeof(ModdedCheck), "IsModded")]
+public class ModdedCheckPatch
+{
+    static bool Prefix(ref bool __result)
+    {
+        __result = false;
+        return false; // skip original method entirely
+    }
+}
+```
+
+**What this does:**
+- `return false` on a Harmony Prefix means the original method is skipped completely
+- `ref bool __result` lets us set the return value of the original method before it runs
+- The game receives `false` from `IsModded()` as if no mods are present
+
+**Why it matters:**
+Without this patch, loading any BepInEx mod can trigger the modded flag. This keeps your private session clean without affecting anything gameplay-related.
 
 ---
 
