@@ -67,8 +67,8 @@ A BepInEx mod for R.E.P.O. with a toggle menu for god mode, speed hacks, noclip,
 ### Setup
 1. Clone the repo:
    ```
-   git clone https://github.com/RaccoonFacts/RaccoonModMenu.git
-   cd RaccoonModMenu
+   git clone https://github.com/RaccoonFacts/RACS_REPO_MOD_MENU.git
+   cd RACS_REPO_MOD_MENU
    ```
 
 2. Open `RaccoonModMenu.csproj` and verify the `GameDir` path points to your R.E.P.O. install:
