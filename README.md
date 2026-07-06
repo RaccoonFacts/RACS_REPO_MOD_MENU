@@ -152,4 +152,4 @@ Without this patch, loading any BepInEx mod can trigger the modded flag. This ke
 
 ## Disclaimer
 
-This mod is for private use with friends and family on self-hosted sessions. Use responsibly.
+i AM NOT TO BLAME IF YOU GET BANNED.
