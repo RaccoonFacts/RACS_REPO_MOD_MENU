@@ -152,4 +152,4 @@ Without this patch, loading any BepInEx mod can trigger the modded flag. This ke
 
 ## Disclaimer
 
-i AM NOT TO BLAME IF YOU GET BANNED.
+I AM NOT TO BLAME IF YOU GET BANNED OR HAVE A NOT FUN TIME. CHEATING IS BAD OK?
